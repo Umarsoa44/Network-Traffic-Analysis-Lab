@@ -26,3 +26,21 @@ During threat hunting operations within network traffic captures, high-frequency
 1. Applied display filter to isolate outbound DNS requests:
    ```text
    dns.flags.response == 0
+   ---
+
+## 3. Indicators of Compromise (IOCs)
+- **Threat Vector:** DarkGate Malware Campaign
+- **Protocol:** DNS (UDP Port 53)
+- **Suspicious Domain / C2 Query:** Host resolution queries linked to malicious external infrastructure.
+
+---
+
+## 5. Risk & Impact Assessment
+DNS queries associated with known malware families like DarkGate indicate active command-and-control (C2) communication or initial payload retrieval attempts. Unfiltered DNS resolution allows infected internal hosts to maintain persistent remote communication with attacker infrastructure.
+
+---
+
+## 6. Recommendations & Mitigation
+1. **DNS Sinkholing:** Add identified malicious domains to internal DNS sinkholes and secure DNS resolvers (e.g., Quad9, Cloudflare Teams).
+2. **Host Quarantine:** Isolate the originating internal host machine from the network to conduct full endpoint detection and response (EDR) remediation.
+3. **Egress Filtering:** Block outbound DNS traffic that bypasses designated internal enterprise DNS servers.
