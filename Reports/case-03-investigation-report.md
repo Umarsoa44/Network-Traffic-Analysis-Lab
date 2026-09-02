@@ -51,4 +51,4 @@ Reconnaissance activity allows threat actors to map exposed network services, id
 
 ⚙️ IDS Threshold Tuning: Configure IDS/IPS rules (e.g., Snort/Suricata) to automatically trigger alerts and temporarily drop connections exceeding high-frequency TCP SYN thresholds from single external IPs.
 
-🔐 Minimize Attack Surface: Enforce firewall rules to restrict public accessibility of non-essential open TCP ports.
+🔐 Minimize Attack Surface: Enforce firewall rules to restrict public accessibility of non-essential open TCP ports. 
