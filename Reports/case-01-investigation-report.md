@@ -34,7 +34,10 @@ During threat hunting operations within network traffic captures, high-frequency
 - **Suspicious Domain / C2 Query:** Host resolution queries linked to malicious external infrastructure.
 
 ---
+## 4. Evidence
+![DarkGate DNS Evidence](../Screenshots/case-01-darkgate-dns.png)
 
+---
 ## 5. Risk & Impact Assessment
 DNS queries associated with known malware families like DarkGate indicate active command-and-control (C2) communication or initial payload retrieval attempts. Unfiltered DNS resolution allows infected internal hosts to maintain persistent remote communication with attacker infrastructure.
 
